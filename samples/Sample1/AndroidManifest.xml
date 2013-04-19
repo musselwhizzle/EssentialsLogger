@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.therealjoshua.essentialsloggersample1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.therealjoshua.essentialsloggersample1.MyApp"
+        >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Example1" />
+        <activity android:name=".Example2" />
+        <activity android:name=".Example3" />
+        <activity android:name=".Example4" />
+        <activity android:name=".Example5" />
+        <activity android:name=".Example6" />
+        <activity android:name=".Example7" />
+
+		<service 
+		    android:name="com.therealjoshua.essentialsloggersample1.Example5ServiceLogger"
+		    android:process=":com.therealjoshua.logging" 
+		    />
+		<service 
+		    android:name="com.therealjoshua.essentialsloggersample1.Example6ServiceLogger"
+		    android:process=":com.therealjoshua.logging" 
+		    />
+		<service 
+		    android:name="com.therealjoshua.essentialsloggersample1.Example7ServiceLogger"
+		    />
+    </application>
+
+</manifest>
